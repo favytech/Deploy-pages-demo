@@ -1,15 +1,23 @@
-import logo from './logo.svg';
+// App.js
+
+import React from 'react';
 import './App.css';
+import Header from './component/Header';
+import HeroSection from './component/HeroSection';
+import Menu from './component/Menu';
+import About from './component/About';
+import Contact from './component/Contact';
+import Footer from './component/Footer'; // Import Footer component
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          This is deployed on cloudflare pages
-        </p>
-      </header>
+      <Header />
+      <HeroSection />
+      <Menu />
+      <About />
+      <Contact />
+      <Footer /> {/* Include Footer component */}
     </div>
   );
 }
